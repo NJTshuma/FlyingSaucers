@@ -29,13 +29,7 @@ void GameObject::UpdateAll( GameState& state )
 		   
 		if (!s_vUpdateList[n]->m_active)
 		{
-			/*for (int i = 0; i < state.lasers.size(); i++)
-			{
-				if (state.lasers[i].m_active == false)
-					state.lasers.erase(state.lasers.begin() + i);
-			}*/
 			delete s_vUpdateList[n--];
-			//state.lasers.erase(state.lasers.begin() + 1);
 		}
 	}
 }
